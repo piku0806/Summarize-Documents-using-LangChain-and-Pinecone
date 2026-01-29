@@ -1,6 +1,6 @@
-# Summarize Documents with LangChain & Pinecone
+# Summarize Documents using LangChain & Pinecone
 
-This is a Streamlit app that allows you to summarize documents using LangChain and Pinecone.
+A Streamlit app that allows you to summarize documents using LangChain and Pinecone.
 
 ## Prerequisites
 Before running this app, make sure you have the following:
@@ -39,10 +39,5 @@ If the summarization process is successful, the summary will be displayed in the
 ## Troubleshooting
 If you encounter any errors during the process, an error message will be displayed with the details of the error.
 
-Please ensure that you have provided valid API keys and other necessary information. Also, make sure the uploaded document is in PDF format.
+Please ensure that you have provided valid API keys and other necessary information.The format accepted is PDF
 
-
-## Disclaimer
-This app is provided as-is without any warranty. The app developer and OpenAI do not take any responsibility for the accuracy or reliability of the generated summaries.
-
-Use the app responsibly and verify the summaries for critical applications or important documents.
