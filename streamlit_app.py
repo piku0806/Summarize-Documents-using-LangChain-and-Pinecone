@@ -7,7 +7,7 @@ from langchain.chains.summarize import load_summarize_chain
 from langchain.document_loaders import PyPDFLoader
 
 # Streamlit app
-st.subheader('Summarize Documents with LangChain & Pinecone')
+st.subheader('Summarize Documents using LangChain & Pinecone')
             
 # Get OpenAI API key, Pinecone API key, environment and index, and the source document input
 with st.sidebar:
@@ -39,8 +39,8 @@ if st.button("Summarize"):
             llm = OpenAI(temperature=0, openai_api_key=openai_api_key)
             chain = load_summarize_chain(llm, chain_type="stuff")
             search = vectordb.similarity_search(" ")
-            summary = chain.run(input_documents=search, question="Write a concise summary within 200 words.")
+            summary = chain.run(input_documents=search, question="Generate a concise summary within 200 words.")
             
             st.success(summary)
         except Exception as e:
-            st.error(f"An error occurred: {e}")
+            st.error(f"An error has occurred: {e}")
